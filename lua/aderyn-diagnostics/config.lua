@@ -7,7 +7,8 @@ M.aderyn_root = ""
 -- Map Aderyn issue severity to vim diagnostic severity
 M.severity_map = {
 	high = vim.diagnostic.severity.ERROR,
-	low = vim.diagnostic.severity.WARN,
+	-- Most aderyn findings at Low level are closer to informationals
+	low = vim.diagnostic.severity.HINT,
 }
 -- Used when the severity can't be parsed from the aderyn result.
 ---@type integer

@@ -117,7 +117,7 @@ function M.aderyn()
 						local ok, parsed = pcall(vim.json.decode, json_content)
 						if not ok or not parsed then
 							vim.schedule(function()
-								vim.notify("Failed to parse Aderyn JSON output",
+								vim.notify("Failed to parse Aderyn JSON output (run forge install?)",
 									vim.log.levels.ERROR)
 							end)
 							return
