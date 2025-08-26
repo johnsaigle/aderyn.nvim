@@ -60,10 +60,8 @@ function M.aderyn()
 					-- Fallback to current working directory
 					if cwd == "" then
 						cwd = vim.fn.getcwd()
-
 					end
 				end
-				vim.notify(string.format("cwd: %s", cwd), vim.log.levels.WARN)
 
 				-- Build command arguments
 				local args = {
